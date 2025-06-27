@@ -99,4 +99,34 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.bodoo.be/nl/articles/cash-flow-prognose-odoo-cfo-dashboard.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bodoo.be/nl/articles/freelancer-boekhouding-odoo-belgie.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bodoo.be/nl/articles/peppol-vs-pdf-facturen-belgie.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bodoo.be/nl/articles/beste-odoo-apps-belgie-2025.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bodoo.be/nl/articles/odoo-18-boekhouding-nieuwe-functies-belgie.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
