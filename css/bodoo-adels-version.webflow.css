@@ -353,6 +353,10 @@ strong {
   line-height: 1.625;
 }
 
+.rt-button-text:where(.w-variant-345fb17a-fa48-90f2-39e1-7d51f8d827ea) {
+  border: 1px #000;
+}
+
 .rt-button-text.rt-button-text-two {
   position: absolute;
   top: 100%;
@@ -544,6 +548,10 @@ strong {
 
 .rt-theme-button-navbar.rt-change-bg.rt-border-none:where(.w-variant-345fb17a-fa48-90f2-39e1-7d51f8d827ea) {
   background-color: var(--color--dark-blue);
+}
+
+.rt-theme-button-navbar.rt-change-bg.rt-border-none.w--current:where(.w-variant-345fb17a-fa48-90f2-39e1-7d51f8d827ea) {
+  color: var(--color--white);
 }
 
 .rt-theme-button-navbar.rt-change-bg.rt-border-none.rt-tab-disolay-none:where(.w-variant-8c4457c6-0924-20aa-29d5-25982428f659) {
