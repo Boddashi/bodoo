@@ -3568,7 +3568,7 @@ strong {
 }
 
 .blog-v1-hero-section.rt-position-relative {
-  background-image: url('../images/pexels-mikhail-nilov-6963857.jpg');
+  background-image: url('../images/pexels-mikhail-nilov-6963857.webp');
   background-position: 50%;
   background-repeat: repeat-x;
   background-size: cover;
@@ -3578,30 +3578,30 @@ strong {
 }
 
 .blog-v1-hero-section.rt-position-relative.sectors {
-  background-image: url('../images/building.jpg');
+  background-image: url('../images/building-1-1.webp');
   background-repeat: repeat-x;
   background-size: cover;
   background-attachment: scroll;
 }
 
 .blog-v1-hero-section.rt-position-relative.sectors.it {
-  background-image: url('../images/it.jpg');
+  background-image: url('../images/it-1-1.webp');
 }
 
 .blog-v1-hero-section.rt-position-relative.sectors.consulting {
-  background-image: url('../images/pexels-fauxels-3184465.jpg');
+  background-image: url('../images/pexels-fauxels-3184465-1-2-1.webp');
 }
 
 .blog-v1-hero-section.rt-position-relative.sectors.logistiek {
-  background-image: url('../images/pexels-tima-miroshnichenko-6169639.jpg');
+  background-image: url('../images/pexels-tima-miroshnichenko-6169639-1-1.webp');
 }
 
 .blog-v1-hero-section.rt-position-relative.sectors.retail {
-  background-image: url('../images/pexels-polina-tankilevitch-3735168.jpg');
+  background-image: url('../images/pexels-polina-tankilevitch-3735168-1-1.webp');
 }
 
 .blog-v1-hero-section.rt-position-relative.sectors.marketing {
-  background-image: url('../images/pexels-mikael-blomkvist-6476584.jpg');
+  background-image: url('../images/pexels-mikael-blomkvist-6476595-1-1.webp');
 }
 
 .rt-heading-wrap {
@@ -6170,6 +6170,10 @@ strong {
 
   .rt-blog-v1-banner-image-linear-two.rt-position-absolute {
     background-image: linear-gradient(#120a23b3, #fff0);
+  }
+
+  .blog-v1-hero-section.rt-position-relative.sectors {
+    background-image: url('../images/building-1-1.webp');
   }
 
   .blog-v1-hero-section.rt-position-relative.sectors.consulting {
