@@ -7,6 +7,7 @@ on:
 jobs:
   optimize-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -20,10 +21,14 @@ jobs:
         run: |
           npm install -g html-minifier-terser clean-css-cli terser
 
-      - name: Add defer to webfont.js
+      - name: Optimize script loading (add defer)
         run: |
           find . -name "*.html" -exec sed -i \
             's|<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"|<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer|' {} \;
+          find . -name "*.html" -exec sed -i \
+            's|<script src="js/webflow.js"|<script src="js/webflow.js" defer|' {} \;
+          find . -name "*.html" -exec sed -i \
+            's|<script src=".*jquery.*"|<script src="js/jquery.js" defer|' {} \;
 
       - name: Minify HTML files
         run: |
@@ -43,7 +48,7 @@ jobs:
         run: |
           find . -name "*.js" -exec terser {} -o {} \;
 
-      - name: Restore CNAME file (just in case)
+      - name: Restore CNAME file
         run: echo 'www.bodoo.be' > ./CNAME
 
       - name: Upload GitHub Pages artifact
@@ -51,10 +56,3 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
-
-      - name: Add defer to webfont.js and webflow.js
-        run: |
-          find . -name "*.html" -exec sed -i \
-            's|<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"|<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer|' {} \;
-          find . -name "*.html" -exec sed -i \
-            's|<script src="js/webflow.js"|<script src="js/webflow.js" defer|' {} \;
