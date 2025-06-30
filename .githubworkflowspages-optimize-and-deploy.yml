@@ -1,0 +1,48 @@
+name: Optimize and Deploy Bodoo Site
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  optimize-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install minification tools
+        run: |
+          npm install -g html-minifier-terser clean-css-cli terser
+
+      - name: Minify HTML files
+        run: |
+          find . -name "*.html" -exec html-minifier-terser \
+            --collapse-whitespace \
+            --remove-comments \
+            --remove-optional-tags \
+            --minify-css true \
+            --minify-js true \
+            -o {} {} \;
+
+      - name: Minify CSS files
+        run: |
+          find . -name "*.css" -exec cleancss -o {} {} \;
+
+      - name: Minify JS files
+        run: |
+          find . -name "*.js" -exec terser {} -o {} \;
+
+      - name: Restore CNAME file (just in case)
+        run: echo 'www.bodoo.be' > ./CNAME
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v2
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
