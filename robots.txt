@@ -1,0 +1,16 @@
+# Bodoo robots.txt
+User-agent: *
+Allow: /
+
+fájlokra
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+Disallow: /*.pdf$
+Disallow: /*.zip$
+
+
+Disallow: /*?*
+
+számára
+Sitemap: https://www.bodoo.be/sitemap.xml
