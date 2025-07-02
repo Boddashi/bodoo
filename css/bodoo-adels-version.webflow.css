@@ -418,11 +418,15 @@ strong {
   line-height: 1.52941;
 }
 
+.rt-sub-heading.rt-change-sub-text.about-us-en {
+  text-transform: none;
+}
+
 .rt-sub-heading.locations {
   text-transform: lowercase;
 }
 
-.rt-sub-heading.odoo {
+.rt-sub-heading.locations.ghent-en, .rt-sub-heading.locations.antwerp-en, .rt-sub-heading.odoo {
   text-transform: none;
 }
 
@@ -514,6 +518,7 @@ strong {
 
 .rt-text-dark.rt-change-text.blogpage {
   color: var(--color--lavender-mist);
+  text-transform: none;
 }
 
 .rt-theme-button-navbar {
@@ -1768,6 +1773,7 @@ strong {
 .rt-navbar-button-area {
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -1794,6 +1800,14 @@ strong {
 
 .rt-menu-drop-down {
   position: relative;
+}
+
+.rt-menu-drop-down.language {
+  text-align: left;
+}
+
+.rt-menu-drop-down.language.mobile-dropdown {
+  display: none;
 }
 
 .rt-drop-down-menu-wrap {
@@ -1835,11 +1849,14 @@ strong {
 
 .rt-drop-down-menu-wrap.rt-overflow-hidden.rt-megamenu.w--open {
   background-color: #dce4ff00;
+  min-width: 150px;
+  max-width: none;
   margin-top: 0;
   padding-left: 0;
   padding-right: 0;
   position: absolute;
   top: 100%;
+  left: 0%;
 }
 
 .nav-menu {
@@ -2368,7 +2385,7 @@ strong {
   padding-bottom: 40px;
 }
 
-.rt-service-description-wrapper.sectors.retail-second-card-text, .rt-service-description-wrapper.sectors.retail-first-card-text, .rt-service-description-wrapper.sectors.marketing-second-card-text {
+.rt-service-description-wrapper.sectors.logistiek-second-card.logistics-en, .rt-service-description-wrapper.sectors.retail-second-card-text, .rt-service-description-wrapper.sectors.retail-first-card-text, .rt-service-description-wrapper.sectors.retail-third-card-text.retail-engilsh, .rt-service-description-wrapper.sectors.marketing-second-card-text, .rt-service-description-wrapper.sectors.marketing-third-card-text.marketing-english {
   padding-bottom: 50px;
 }
 
@@ -3430,6 +3447,10 @@ strong {
 
 .rt-plan-point-wrapper.pricing.premium-plan {
   padding-bottom: 190px;
+}
+
+.rt-plan-point-wrapper.pricing.standard-plan.english-pricing {
+  padding-bottom: 50px;
 }
 
 .rt-pricing-item-description {
@@ -4824,8 +4845,8 @@ strong {
   background-image: linear-gradient(52deg, #5e36ef, #ff5227);
 }
 
-.rt-mainmenu-2 {
-  justify-content: center;
+.rt-mainmenu-lg {
+  justify-content: flex-start;
   align-items: stretch;
   display: flex;
 }
@@ -4839,7 +4860,11 @@ strong {
   display: flex;
 }
 
-.rt-menu-text-2 {
+.rt-megamenu-wrapper-3.language {
+  padding: 20px;
+}
+
+.rt-menu-text-lg {
   color: #fff;
   letter-spacing: -.21px;
   text-transform: capitalize;
@@ -4849,11 +4874,11 @@ strong {
   line-height: 1.31579;
 }
 
-.rt-menu-text-2.rt-text-dark {
+.rt-menu-text-lg.rt-text-dark {
   color: #050704;
 }
 
-.rt-menu-text-2.rt-text-dark.rt-text-color-black.nav-menuitem:where(.w-variant-61a008bf-38ed-4f8e-6172-c334b2ebdcad), .rt-menu-text-2.rt-text-dark.rt-text-color-black.nav-menuitem:where(.w-variant-c15e3c91-5a6b-bbbf-d069-7675c15a64ac) {
+.rt-menu-text-lg.rt-text-dark.rt-text-color-black.nav-menuitem:where(.w-variant-61a008bf-38ed-4f8e-6172-c334b2ebdcad), .rt-menu-text-lg.rt-text-dark.rt-text-color-black.nav-menuitem:where(.w-variant-c15e3c91-5a6b-bbbf-d069-7675c15a64ac) {
   color: var(--color--lavender-mist);
 }
 
@@ -4876,13 +4901,13 @@ strong {
   position: static;
 }
 
-.rt-nav-link-2 {
+.rt-nav-link-lg {
   font-size: 15px;
   transition: all .2s;
   display: block;
 }
 
-.rt-nav-link-2:hover {
+.rt-nav-link-lg:hover {
   color: #5e36ef;
   transform: translate(15px);
 }
@@ -4929,6 +4954,10 @@ strong {
 .text-block-6, .text-block-7 {
   font-size: var(--font-size--h5);
   font-weight: 700;
+}
+
+.article-3-en-table {
+  text-align: center;
 }
 
 @media screen and (min-width: 1280px) {
@@ -5191,7 +5220,7 @@ strong {
     font-size: 38px;
   }
 
-  .rt-mainmenu-2, .rt-megamenu-wrapper-3 {
+  .rt-mainmenu-lg, .rt-megamenu-wrapper-3 {
     position: relative;
   }
 }
@@ -5270,6 +5299,11 @@ strong {
     inset: 100% 0% auto;
   }
 
+  .rt-drop-down-menu-wrap.rt-overflow-hidden.rt-megamenu.language.w--open {
+    min-width: 90px;
+    max-width: 90px;
+  }
+
   .rt-business-paragraph-wrap {
     max-width: 1200px;
   }
@@ -5314,6 +5348,10 @@ strong {
     padding-bottom: 20px;
   }
 
+  .rt-service-description-wrapper.sectors.logistiek-second-card.logistics-en {
+    padding-bottom: 30px;
+  }
+
   .rt-service-card-item.rt-radius-twenty.sectors {
     min-height: 500px;
     max-height: 500px;
@@ -5325,6 +5363,10 @@ strong {
 
   .rt-plan-point-wrapper.pricing.standard-plan {
     padding-bottom: 80px;
+  }
+
+  .rt-plan-point-wrapper.pricing.standard-plan.english-pricing {
+    padding-bottom: 55px;
   }
 
   .rt-plan-point-wrapper.prices-basic-plan {
@@ -5368,19 +5410,19 @@ strong {
     font-size: 45px;
   }
 
-  .rt-mainmenu-2 {
+  .rt-mainmenu-lg {
     justify-content: center;
     align-items: stretch;
     display: flex;
     position: relative;
   }
 
-  .rt-menu-text-2 {
+  .rt-menu-text-lg {
     padding-left: 15px;
     padding-right: 30px;
   }
 
-  .rt-menu-text-2.rt-text-dark {
+  .rt-menu-text-lg.rt-text-dark {
     padding-left: 0;
     padding-right: 0;
   }
@@ -6147,7 +6189,11 @@ strong {
     padding-bottom: 220px;
   }
 
-  .rt-plan-point-wrapper.pricing.standard-plan {
+  .rt-plan-point-wrapper.pricing.premium-plan.english-pricing {
+    padding-bottom: 190px;
+  }
+
+  .rt-plan-point-wrapper.pricing.standard-plan, .rt-plan-point-wrapper.pricing.standard-plan.english-pricing {
     padding-bottom: 50px;
   }
 
@@ -6359,7 +6405,7 @@ strong {
     text-align: right;
   }
 
-  .rt-mainmenu-2 {
+  .rt-mainmenu-lg {
     justify-content: center;
     align-items: stretch;
     display: flex;
@@ -7010,6 +7056,14 @@ strong {
 
   .rt-menu-drop-down {
     width: 100%;
+  }
+
+  .rt-menu-drop-down.language {
+    display: none;
+  }
+
+  .rt-menu-drop-down.language.mobile-dropdown {
+    display: block;
   }
 
   .rt-drop-down-menu-wrap.rt-overflow-hidden.w--open {
@@ -8007,7 +8061,7 @@ strong {
     padding-right: 0;
   }
 
-  .rt-mainmenu-2 {
+  .rt-mainmenu-lg {
     padding-top: 10px;
     padding-bottom: 10px;
     display: block;
@@ -8019,7 +8073,7 @@ strong {
     padding: 0 20px;
   }
 
-  .rt-menu-text-2.rt-text-dark {
+  .rt-menu-text-lg.rt-text-dark {
     text-align: left;
   }
 
@@ -8028,7 +8082,7 @@ strong {
     padding-bottom: 10px;
   }
 
-  .rt-nav-link-2 {
+  .rt-nav-link-lg {
     color: #050704;
     text-transform: capitalize;
   }
@@ -9265,19 +9319,19 @@ strong {
 }
 
 @media screen and (min-width: 1920px) {
-  #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-ee58078d, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-fdc12d0c, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-252810ec, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-ddbeb746, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-aa92a5b2, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-d67938a0, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-0d4e2154, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-eeda2f48, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-0813d9a6 {
+  #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-ee58078d, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-fdc12d0c, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-252810ec, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-ddbeb746, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-aa92a5b2, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-d67938a0, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-0d4e2154, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-eeda2f48, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-0813d9a6, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-87a8a194, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-a571e5a7, #w-node-_7dd35a00-2ae8-db93-b5dd-faf98371ab39-ee0b460a {
     justify-self: auto;
   }
 }
 
 @media screen and (max-width: 991px) {
-  #w-node-d796867d-a3f8-ce6e-134c-1d7f22bba5d9-83f6eaf9 {
+  #w-node-d796867d-a3f8-ce6e-134c-1d7f22bba5d9-83f6eaf9, #w-node-d796867d-a3f8-ce6e-134c-1d7f22bba5d9-dba01417 {
     grid-area: span 1 / span 2 / span 1 / span 2;
   }
 }
 
 @media screen and (max-width: 479px) {
-  #w-node-_3086a38c-b3d0-f71b-e827-e0c80c9a2ee0-8afe637d {
+  #w-node-_3086a38c-b3d0-f71b-e827-e0c80c9a2ee0-8afe637d, #w-node-_3086a38c-b3d0-f71b-e827-e0c80c9a2ee0-68d32944 {
     place-self: auto;
   }
 }
