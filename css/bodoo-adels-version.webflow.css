@@ -4045,7 +4045,7 @@ strong {
 
 .rt-nav-link:hover {
   color: var(--color--purplish-blue);
-  transform: translate(15px);
+  transform: translate(5px);
 }
 
 .rt-mainmenu {
@@ -4909,7 +4909,7 @@ strong {
 
 .rt-nav-link-lg:hover {
   color: #5e36ef;
-  transform: translate(15px);
+  transform: translate(5px);
 }
 
 .lightbox-link-2 {
@@ -5300,8 +5300,10 @@ strong {
   }
 
   .rt-drop-down-menu-wrap.rt-overflow-hidden.rt-megamenu.language.w--open {
-    min-width: 90px;
-    max-width: 90px;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-width: 80px;
+    max-width: 80px;
   }
 
   .rt-business-paragraph-wrap {
@@ -5406,6 +5408,11 @@ strong {
     justify-items: stretch;
   }
 
+  .rt-mega-menu-inner-wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .rt-no-margin-3 {
     font-size: 45px;
   }
@@ -5415,6 +5422,11 @@ strong {
     align-items: stretch;
     display: flex;
     position: relative;
+  }
+
+  .rt-megamenu-wrapper-3.language {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .rt-menu-text-lg {
@@ -5885,6 +5897,11 @@ strong {
     left: 0%;
   }
 
+  .rt-drop-down-menu-wrap.rt-overflow-hidden.rt-megamenu.language.w--open {
+    min-width: 80px;
+    max-width: 80px;
+  }
+
   .rt-about-section-big-text {
     padding-top: 140px;
     font-size: clamp(50px, 8vw, 220px);
@@ -6279,12 +6296,26 @@ strong {
     flex-flow: row;
     justify-content: center;
     align-items: flex-start;
+    width: 100%;
     display: flex;
     overflow: visible;
   }
 
+  .rt-mainmenu:where(.w-variant-c15e3c91-5a6b-bbbf-d069-7675c15a64ac) {
+    width: 100%;
+  }
+
   .rt-megamenu-wrapper {
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
     padding: 20px;
+  }
+
+  .rt-megamenu-wrapper:where(.w-variant-c15e3c91-5a6b-bbbf-d069-7675c15a64ac) {
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .rt-error-page-content-section-right-image.rt-position-absolute, .rt-error-page-content-section-left-image.rt-position-absolute {
@@ -6355,6 +6386,21 @@ strong {
 
   .rt-footer-v1.rt-overflow-hidden.footer-dark {
     background-image: linear-gradient(#221947ba, #fff 76%);
+  }
+
+  .rt-mega-menu-inner-wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .rt-mega-menu-inner-wrapper:where(.w-variant-c15e3c91-5a6b-bbbf-d069-7675c15a64ac) {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .rt-mega-menu-content-inner-wrapper:where(.w-variant-c15e3c91-5a6b-bbbf-d069-7675c15a64ac) {
+    justify-content: center;
+    align-items: stretch;
   }
 
   .rt-change {
