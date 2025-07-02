@@ -1,132 +1,231 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://www.bodoo.be/index.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/odoo.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/sectoren/bouw.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/sectoren/it.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/sectoren/consulting.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/sectoren/logistiek.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/sectoren/retail.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/sectoren/marketing.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/pricing.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/about-us.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/blog.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/contact.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/gent.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/antwerpen.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/articles/cash-flow-prognose-odoo-cfo-dashboard.html</loc>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/articles/freelancer-boekhouding-odoo-belgie.html</loc>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/articles/peppol-vs-pdf-facturen-belgie.html</loc>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/articles/beste-odoo-apps-belgie-2025.html</loc>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.bodoo.be/nl/articles/odoo-18-boekhouding-nieuwe-functies-belgie.html</loc>
+    <lastmod>2025-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://www.bodoo.be/en/home.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/odoo.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/sectors/building.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/sectors/it.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/sectors/consulting.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/sectors/logistics.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/sectors/retail.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/sectors/marketing.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/pricing.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/about-us.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/blog.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/contact.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/ghent.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/antwerp.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/articles/cash-flow-forecast-odoo-cfo-dashboard.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/articles/freelancer-accounting-odoo-belgium.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/articles/peppol-vs-pdf-invoices-odoo-belgium.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/articles/best-odoo-apps-belgian-startups-2025.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bodoo.be/en/articles/odoo-18-accounting-new-features-belgium-smes.html</loc>
+    <lastmod>2025-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
