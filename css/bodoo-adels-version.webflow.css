@@ -850,6 +850,10 @@ strong {
   height: 680px;
 }
 
+.rt-auto-fit.rt-image-full-width.homepage {
+  overflow: visible;
+}
+
 .rt-auto-fit.rt-image-filter {
   filter: contrast(122%);
 }
@@ -1226,6 +1230,10 @@ strong {
 
 .rt-marquee-text-bold.rt-change-clor {
   color: #615c7380;
+}
+
+.rt-marquee-text-bold.rt-change-clor.it-color {
+  color: #000;
 }
 
 .rt-facility-item-wrapper {
@@ -5763,6 +5771,11 @@ strong {
     overflow: hidden;
   }
 
+  .rt-auto-fit.rt-image-full-width.homepage {
+    min-width: 1500px;
+    max-width: 100%;
+  }
+
   .rt-auto-fit.rt-tab-image-full {
     box-sizing: border-box;
     object-fit: cover;
@@ -5779,6 +5792,10 @@ strong {
     align-items: center;
     height: 3%;
     display: block;
+  }
+
+  .rt-big-container.homepage {
+    min-width: 1500px;
   }
 
   .rt-home-one-banner-image.rt-overflow-hidden {
