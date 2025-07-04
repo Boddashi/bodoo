@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Fri Jul 04 2025 20:22:39 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Fri Jul 04 2025 20:41:02 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="684ff366cfb5a7da83f6eaf6" data-wf-site="684ff366cfb5a7da83f6ea85" lang="en">
 <head>
   <meta charset="utf-8">
@@ -261,36 +261,7 @@ if (btnToNl) btnToNl.addEventListener("click", function (e) {
             <div class="rt-text-style-h4-3 rt-text-align-center">Neem contact met ons op voor meer informatie</div>
           </div>
           <div class="form-block w-form">
-            <form id="wf-form-email" name="wf-form-email" data-name="email" action="https://bodoo-email.netlify.app/.netlify/functions/submit" method="post" class="rt-form" data-wf-page-id="684ff366cfb5a7da83f6eaf6" data-wf-element-id="ec5076f5-82da-441c-df16-c05e321c9ef8"><input class="rt-form-input name w-input" maxlength="256" name="name" data-name="name" placeholder="Full Name" type="text" id="Name" required=""><input class="rt-form-input email w-input" maxlength="256" name="email" data-name="email" placeholder="Your Email Address" type="email" id="Email" required=""><input class="rt-form-input phone w-input" maxlength="256" name="phone" data-name="phone" placeholder="Phone Number" type="tel" id="Phone">
-              <div class="w-embed w-script">
-                <script>
-  const form = document.querySelector('form');
-  const successMessage = document.querySelector('.w-form-done');
-  const errorMessage = document.querySelector('.w-form-fail');
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    // Először elrejtjük az üzeneteket
-    successMessage.style.display = 'none';
-    errorMessage.style.display = 'none';
-    const formData = new FormData(form);
-    const data = new URLSearchParams(formData);
-    const response = await fetch('https://bodoo-email.netlify.app/.netlify/functions/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: data,
-    });
-    if (response.ok) {
-      form.style.display = 'none'; // vagy ha nem akarod eltűntetni, ezt vedd ki
-      successMessage.style.display = 'block';
-      form.reset();
-    } else {
-      errorMessage.style.display = 'block';
-    }
-  });
-</script>
-              </div><textarea id="Message" name="message" maxlength="5000" data-name="message" placeholder="Your Message" required="" class="rt-form-text-area message w-input"></textarea>
+            <form id="wf-form-email" name="wf-form-email" data-name="email" action="https://bodoo-email.netlify.app/.netlify/functions/submit" method="post" class="rt-form" data-wf-page-id="684ff366cfb5a7da83f6eaf6" data-wf-element-id="ec5076f5-82da-441c-df16-c05e321c9ef8"><input class="rt-form-input name w-input" maxlength="256" name="name" data-name="name" placeholder="Full Name" type="text" id="Name" required=""><input class="rt-form-input email w-input" maxlength="256" name="email" data-name="email" placeholder="Your Email Address" type="email" id="Email" required=""><input class="rt-form-input phone w-input" maxlength="256" name="phone" data-name="phone" placeholder="Phone Number" type="tel" id="Phone"><textarea id="Message" name="message" maxlength="5000" data-name="message" placeholder="Your Message" required="" class="rt-form-text-area message w-input"></textarea>
               <div data-w-id="ec5076f5-82da-441c-df16-c05e321c9efd" class="rt-position-relative"><input type="submit" data-wait="Please wait..." class="rt-position-absolute rt-contact-one-submit-button w-button" value="Submit">
                 <div class="rt-theme-button-navbar rt-change-bg rt-border-none rt-width-full">
                   <div class="rt-position-relative rt-button-text-wrap rt-text-align-center">
@@ -300,12 +271,51 @@ if (btnToNl) btnToNl.addEventListener("click", function (e) {
                 </div>
               </div>
             </form>
-            <div class="w-form-done">
+            <div class="_w-form-done w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>
-            <div class="w-form-fail">
+            <div class="_w-form-fail w-form-fail">
               <div>Oops! Something went wrong while submitting the form.</div>
             </div>
+          </div>
+          <div class="w-embed w-script">
+            <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+    const successMessage = document.querySelector('.w-form-done');
+    const errorMessage = document.querySelector('.w-form-fail');
+    if (!form || !successMessage || !errorMessage) {
+      console.error("Nem található az űrlap vagy az üzenet elemek.");
+      return;
+    }
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      // Üzenetek elrejtése
+      successMessage.style.display = 'none';
+      errorMessage.style.display = 'none';
+      const formData = new FormData(form);
+      const data = new URLSearchParams(formData);
+      try {
+        const response = await fetch('https://bodoo-email.netlify.app/.netlify/functions/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: data,
+        });
+        if (response.ok) {
+          successMessage.style.display = 'block';
+          form.reset();
+        } else {
+          errorMessage.style.display = 'block';
+        }
+      } catch (error) {
+        console.error('Hiba történt az űrlap beküldésekor:', error);
+        errorMessage.style.display = 'block';
+      }
+    });
+  });
+</script>
           </div>
         </div>
       </div>
