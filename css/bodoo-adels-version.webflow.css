@@ -228,6 +228,7 @@ strong {
 
 .rt-no-margin {
   font-size: var(--font-size--h2);
+  letter-spacing: 0;
   text-transform: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -253,6 +254,7 @@ strong {
 
 .rt-no-margin.rt-text-align-center.sectors {
   text-align: center;
+  letter-spacing: 0;
   text-transform: none;
 }
 
@@ -295,7 +297,7 @@ strong {
   font-family: var(--_font-name---manrope);
   color: var(--color--heading-black);
   font-size: var(--font-size--h5);
-  letter-spacing: -.35px;
+  letter-spacing: 0;
   text-transform: none;
   font-weight: 600;
   line-height: 1.41667;
@@ -335,6 +337,7 @@ strong {
 
 .rt-text-style-h5.sectors {
   color: var(--color--heading-black);
+  letter-spacing: 0;
   text-transform: none;
   font-weight: 600;
 }
@@ -1955,7 +1958,7 @@ strong {
   color: var(--color--dark-blue);
   font-size: clamp(50px, 8.5vw, 220px);
   font-weight: 700;
-  line-height: .6;
+  line-height: .7;
 }
 
 .rt-service-heading-wrapper {
@@ -2403,6 +2406,14 @@ strong {
 
 .rt-service-description-wrapper.sectors.it-en {
   padding-bottom: 50px;
+}
+
+.rt-service-description-wrapper.sectors.second-card-bouw {
+  padding-bottom: 0;
+}
+
+.rt-service-description-wrapper.sectors.bouw-cards-3 {
+  padding-bottom: 30px;
 }
 
 .rt-hero-card-heading {
@@ -4968,6 +4979,10 @@ strong {
   text-align: center;
 }
 
+.bold-text-2, .bold-text-3 {
+  letter-spacing: 0;
+}
+
 @media screen and (min-width: 1280px) {
   .rt-no-margin {
     font-size: var(--font-size--h2);
@@ -5170,6 +5185,10 @@ strong {
 
   .rt-service-description-wrapper.sectors.sectors-en {
     padding-bottom: 15px;
+  }
+
+  .rt-service-description-wrapper.sectors.bouw-cards-3 {
+    padding-bottom: 0;
   }
 
   .rt-service-card-item {
@@ -7150,6 +7169,7 @@ strong {
 
   .rt-about-section-big-text {
     font-size: 60px;
+    line-height: .7;
   }
 
   .rt-service-heading-wrapper {
@@ -8400,6 +8420,7 @@ strong {
 
   .rt-about-section-big-text {
     font-size: 45px;
+    line-height: .7;
   }
 
   .rt-service-heading {
@@ -9070,7 +9091,8 @@ strong {
   }
 
   .rt-about-section-big-text {
-    font-size: 20px;
+    font-size: 22px;
+    line-height: .7;
   }
 
   .rt-play-button-box.rt-align-xy-center {

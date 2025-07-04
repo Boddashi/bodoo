@@ -1,16 +1,26 @@
-# Bodoo robots.txt
 User-agent: *
 Allow: /
 
-fájlokra
 Disallow: /css/
 Disallow: /js/
-Disallow: /images/
+#Disallow: /images/
+Disallow: /fonts/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /admin/
+
 Disallow: /*.pdf$
 Disallow: /*.zip$
+Disallow: /*.doc$
+Disallow: /*.xls$
+Disallow: /*.ics$
 
+Disallow: /*?*utm_*
+Disallow: /*?*fbclid=
 
-Disallow: /*?*
-
-számára
 Sitemap: https://www.bodoo.be/sitemap.xml
+
+#User-agent: Googlebot
+#Disallow: /admin/
+
+# Made: 2025-07-04 
