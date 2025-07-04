@@ -1235,7 +1235,7 @@ strong {
   color: #615c7380;
 }
 
-.rt-marquee-text-bold.rt-change-clor.it-color {
+.rt-marquee-text-bold.rt-change-clor.it-color, .rt-marquee-text-bold.rt-change-clor.it {
   color: #000;
 }
 
