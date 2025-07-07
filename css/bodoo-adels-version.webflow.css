@@ -3469,7 +3469,7 @@ strong {
 }
 
 .rt-plan-point-wrapper.pricing.standard-plan.english-pricing {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .rt-pricing-item-description {
@@ -4981,6 +4981,10 @@ strong {
 
 .bold-text-2, .bold-text-3 {
   letter-spacing: 0;
+}
+
+._w-form-done {
+  background-color: #cdf2d2;
 }
 
 @media screen and (min-width: 1280px) {
