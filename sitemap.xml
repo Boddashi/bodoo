@@ -348,4 +348,59 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/best-odoo-apps-belgian-startups-2025.html"/>
   </url>
 
+  <url>
+    <loc>https://www.bodoo.be/nl/odoo-boekhouder-antwerpen.html</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/odoo-boekhouder-antwerpen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/odoo-accountant-antwerp.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.bodoo.be/nl/odoo-boekhouder-belgie.html</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/odoo-boekhouder-belgie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/odoo-accountant-belgium.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.bodoo.be/nl/odoo-boekhouder-vlaanderen.html</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/odoo-boekhouder-vlaanderen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/odoo-accountant-flanders.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.bodoo.be/en/odoo-accountant-antwerp.html</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/odoo-boekhouder-antwerpen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/odoo-accountant-antwerp.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.bodoo.be/en/odoo-accountant-belgium.html</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/odoo-boekhouder-belgie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/odoo-accountant-belgium.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.bodoo.be/en/odoo-accountant-flanders.html</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/odoo-boekhouder-vlaanderen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/odoo-accountant-flanders.html"/>
+  </url>
+
+
 </urlset>

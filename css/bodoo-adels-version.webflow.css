@@ -252,6 +252,10 @@ strong {
   font-size: var(--font-size--h2);
 }
 
+.rt-no-margin.rt-text-align-center.locations.landing-page {
+  text-align: center;
+}
+
 .rt-no-margin.rt-text-align-center.sectors {
   text-align: center;
   letter-spacing: 0;
