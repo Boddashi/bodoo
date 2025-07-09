@@ -1,0 +1,633 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Jul 09 2025 18:28:40 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="686e3b25575b4020a4a9b680" data-wf-site="684ff366cfb5a7da83f6ea85" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Belgian VAT return in Odoo – Step-by-step guide for SMEs</title>
+  <meta content="Learn how to submit your Belgian VAT return in Odoo with this simple guide. Includes setup, XML export, Intervat, and automation tips." name="description">
+  <meta content="Belgian VAT return in Odoo – Step-by-step guide for SMEs" property="og:title">
+  <meta content="Learn how to submit your Belgian VAT return in Odoo with this simple guide. Includes setup, XML export, Intervat, and automation tips." property="og:description">
+  <meta content="Belgian VAT return in Odoo – Step-by-step guide for SMEs" property="twitter:title">
+  <meta content="Learn how to submit your Belgian VAT return in Odoo with this simple guide. Includes setup, XML export, Intervat, and automation tips." property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../../css/bodoo-adels-version.webflow.css" rel="stylesheet" type="text/css">
+  <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="3086a38c-b3d0-f71b-e827-e0c80c9a2eda"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="3086a38c-b3d0-f71b-e827-e0c80c9a2ee0"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e7e5395f-4248-90c0-a57b-dcb95662f24e"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0d79fa40-b075-5db1-74fc-d2b83b737ff4"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="eeee3e46-74e0-9ef8-72b1-3eb56e6e9166"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="f795cdc0-0bde-4590-969a-aa0e84d0efb1"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="f795cdc0-0bde-4590-969a-aa0e84d0efb5"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="f795cdc0-0bde-4590-969a-aa0e84d0efba"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="f795cdc0-0bde-4590-969a-aa0e84d0efd9"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="f795cdc0-0bde-4590-969a-aa0e84d0efdb"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="aee0b4a3-cc35-bfaa-cd6b-8e13425a36a8"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="aee0b4a3-cc35-bfaa-cd6b-8e13425a36b0"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="aee0b4a3-cc35-bfaa-cd6b-8e13425a36b9"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="aee0b4a3-cc35-bfaa-cd6b-8e13425a36c2"] {opacity:0;}}</style>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Manrope:regular","Playfair Display:regular"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../../images/webclip.png" rel="apple-touch-icon">
+  <link href="https://www.bodoo.be/en/articles/belgian-vat-return-odoo.html" rel="canonical"><!--  Preconnect optimalizálás LCP + DNS lookup csökkentés  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <!--  Swap megadása a Google Fonts rendszer felé  -->
+  <style>
+  html {
+    font-display: swap;
+  }
+</style>
+  <!--  Google tag (gtag.js)  -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-35XNG7YFXZ"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-35XNG7YFXZ');
+</script>
+  <script>
+  document.documentElement.lang = "en";
+</script>
+  <!--  Meta Pixel Code  -->
+  <script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2766716793526923');
+fbq('track', 'PageView');
+</script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2766716793526923&ev=PageView&noscript=1"></noscript>
+  <!--  End Meta Pixel Code  -->
+</head>
+<body>
+  <div class="rt-blog-details blogpage">
+    <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-wf--nav-bar-en--variant="base" data-easing="ease" data-collapse="medium" data-w-id="c15e3c91-5a6b-bbbf-d069-7675c15a6464" role="banner" data-duration="400">
+      <div class="rt-big-container w-container">
+        <div class="w-layout-hflex rt-navbar-wrapper">
+          <a href="../../en/home.html" class="brand w-nav-brand"><img src="../../images/logo4.webp" loading="lazy" width="170" sizes="169.99497985839844px" alt="" srcset="../../images/logo4-p-500.webp 500w, ../../images/logo4-p-800.webp 800w, ../../images/logo4.webp 955w"></a>
+          <nav role="navigation" class="nav-menu w-nav-menu">
+            <a href="../../en/odoo.html" class="rt-menu-text rt-text-dark rt-menu-padding rt-text-color-black">Odoo</a>
+            <div data-delay="500" data-hover="true" data-w-id="c15e3c91-5a6b-bbbf-d069-7675c15a646c" class="rt-menu-drop-down w-dropdown">
+              <div class="rt-menu-padding w-dropdown-toggle">
+                <div class="rt-menu-text rt-text-dark rt-text-color-black">Sectors</div>
+                <div class="rt-position-absolute rt-menu-drop-down"><img width="7" height="15" alt="" src="../../images/angle-down.svg" loading="lazy" class="rt-arrow rt-text-color-black"></div>
+              </div>
+              <nav class="rt-drop-down-menu-wrap rt-overflow-hidden rt-megamenu w-dropdown-list">
+                <div class="rt-mainmenu">
+                  <div class="rt-megamenu-wrapper">
+                    <div class="w-layout-vflex rt-mega-menu-inner-wrapper">
+                      <div class="w-layout-hflex rt-mega-menu-content-inner-wrapper">
+                        <div class="rt-megamenu-item">
+                          <a href="../../en/sectors/building.html" class="rt-nav-link">Construction</a>
+                          <a href="../../en/sectors/it.html" class="rt-nav-link">IT</a>
+                          <a href="../../en/sectors/consulting.html" class="rt-nav-link">Consulting</a>
+                          <a href="../../en/sectors/logistics.html" class="rt-nav-link">Logistics</a>
+                          <a href="../../en/sectors/retail.html" class="rt-nav-link">Retail</a>
+                          <a href="../../en/sectors/marketing.html" class="rt-nav-link">Marketing</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <a href="../../en/pricing.html" class="rt-menu-text rt-text-dark rt-menu-padding rt-text-color-black rt-change-bottom">Pricing</a>
+            <a href="../../en/about-us.html" class="rt-menu-text rt-text-dark rt-menu-padding rt-text-color-black rt-change-bottom">About Bodoo</a>
+            <a href="../../en/blog.html" class="rt-menu-text rt-text-dark rt-menu-padding rt-text-color-black">Blog</a>
+            <div data-delay="500" data-hover="true" data-w-id="c15e3c91-5a6b-bbbf-d069-7675c15a648b" class="rt-menu-drop-down w-dropdown">
+              <div class="rt-menu-padding-2 w-dropdown-toggle">
+                <div class="rt-menu-text-lg rt-text-dark rt-text-color-black nav-menuitem">Contact<br></div>
+                <div class="rt-position-absolute rt-menu-drop-down"><img width="7" height="15" alt="" src="../../images/angle-down.svg" loading="lazy" class="rt-arrow-2 rt-text-color-black nav-arrow rt-arrow"></div>
+              </div>
+              <nav class="rt-drop-down-menu-wrap rt-overflow-hidden rt-megamenu w-dropdown-list">
+                <div class="rt-mainmenu-lg">
+                  <div class="rt-megamenu-wrapper-3">
+                    <div class="w-layout-vflex rt-mega-menu-inner-wrapper">
+                      <div class="w-layout-hflex rt-mega-menu-content-inner-wrapper">
+                        <div class="rt-megamenu-item">
+                          <a href="../../en/contact.html" class="rt-nav-link-lg">Contact</a>
+                          <a href="../../en/ghent.html" class="rt-nav-link-lg">Ghent</a>
+                          <a href="../../en/antwerp.html" class="rt-nav-link-lg">Antwerp</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div data-delay="500" data-hover="true" class="rt-menu-drop-down language mobile-dropdown w-dropdown">
+              <div class="rt-menu-padding-2 w-dropdown-toggle">
+                <div class="rt-menu-text-lg rt-text-dark rt-text-color-black nav-menuitem">EN</div>
+                <div class="rt-position-absolute rt-menu-drop-down"><img width="7" height="15" alt="" src="../../images/angle-down.svg" loading="lazy" class="rt-arrow-2 rt-text-color-black nav-arrow rt-arrow"></div>
+              </div>
+              <nav class="rt-drop-down-menu-wrap rt-overflow-hidden rt-megamenu w-dropdown-list">
+                <div class="rt-mainmenu-lg">
+                  <div class="rt-megamenu-wrapper-3 language">
+                    <div class="w-layout-vflex rt-mega-menu-inner-wrapper">
+                      <div class="w-layout-hflex rt-mega-menu-content-inner-wrapper">
+                        <div class="rt-megamenu-item">
+                          <a href="../../index.html" class="rt-nav-link-lg">NL</a>
+                          <a href="../../en/home.html" class="rt-nav-link-lg">EN</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </nav>
+          <div class="w-layout-hflex rt-navbar-wrapper">
+            <div class="w-layout-hflex rt-navbar-button-area">
+              <div class="mobile-list-button w-nav-button">
+                <div class="w-layout-vflex nav-open-mobile-button">
+                  <div class="mobile-list-line-one"></div>
+                  <div class="mobile-list-line-two"></div>
+                  <div class="mobile-list-line-three"></div>
+                </div>
+              </div>
+              <a href="../../en/contact.html" class="rt-theme-button-navbar rt-change-bg rt-border-none rt-tab-disolay-none rt-dark-full-width rt-button-tab-none w-inline-block">
+                <div class="rt-position-relative rt-button-text-wrap dark-full-width-2">
+                  <div class="rt-button-text dark-full-width-3">Book An Appointment</div>
+                  <div class="rt-button-text dark-full-width-3 rt-button-text-two dark-full-width-4">Book An Appointment</div>
+                </div>
+              </a>
+            </div>
+            <div data-delay="500" data-hover="true" class="rt-menu-drop-down language w-dropdown">
+              <div class="rt-menu-padding-2 w-dropdown-toggle">
+                <div class="rt-menu-text-lg rt-text-dark rt-text-color-black nav-menuitem">EN</div>
+                <div class="rt-position-absolute rt-menu-drop-down"><img width="7" height="15" alt="" src="../../images/angle-down.svg" loading="lazy" class="rt-arrow-2 rt-text-color-black nav-arrow rt-arrow"></div>
+              </div>
+              <nav class="rt-drop-down-menu-wrap rt-overflow-hidden rt-megamenu language w-dropdown-list">
+                <div class="rt-mainmenu-lg">
+                  <div class="rt-megamenu-wrapper-3 language">
+                    <div class="w-layout-vflex rt-mega-menu-inner-wrapper">
+                      <div class="w-layout-hflex rt-mega-menu-content-inner-wrapper">
+                        <div class="rt-megamenu-item">
+                          <a href="#" id="switch-to-nl-from-en" class="rt-nav-link-lg">NL</a>
+                          <a href="#" id="lang-en-static" class="rt-nav-link-lg">EN</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-embed w-script">
+        <script>
+  // Oldalpárosítás angol és holland URL-ek között
+  const langPairs = {
+    "/index.html": "/en/home.html",
+    "/nl/odoo.html": "/en/odoo.html",
+    "/nl/sectoren/bouw.html": "/en/sectors/building.html",
+    "/nl/sectoren/it.html": "/en/sectors/it.html",
+    "/nl/sectoren/consulting.html": "/en/sectors/consulting.html",
+    "/nl/sectoren/logistiek.html": "/en/sectors/logistics.html",
+    "/nl/sectoren/retail.html": "/en/sectors/retail.html",
+    "/nl/sectoren/marketing.html": "/en/sectors/marketing.html",
+    "/nl/pricing.html": "/en/pricing.html",
+    "/nl/about-us.html": "/en/about-us.html",
+    "/nl/blog.html": "/en/blog.html",
+    "/nl/contact.html": "/en/contact.html",
+    "/nl/gent.html": "/en/ghent.html",
+    "/nl/antwerpen.html": "/en/antwerp.html",
+    "/nl/odoo-boekhouder-antwerpen.html": "/en/odoo-accountant-antwerp.html",
+    "/nl/odoo-boekhouder-belgie.html": "/en/odoo-accountant-belgium.html",
+    "/nl/odoo-boekhouder-vlaanderen.html": "/en/odoo-accountant-flanders.html",
+    "/nl/articles/cash-flow-prognose-odoo-cfo-dashboard.html": "/en/articles/cash-flow-forecast-odoo-cfo-dashboard.html",
+    "/nl/articles/freelancer-boekhouding-odoo-belgie.html": "/en/articles/freelancer-accounting-odoo-belgium.html",
+    "/nl/articles/peppol-vs-pdf-facturen-belgie.html": "/en/articles/peppol-vs-pdf-invoices-odoo-belgium.html",
+    "/nl/articles/beste-odoo-apps-belgie-2025.html": "/en/articles/best-odoo-apps-belgian-startups-2025.html",
+    "/nl/articles/odoo-18-boekhouding-nieuwe-functies-belgie.html": "/en/articles/odoo-18-accounting-new-features-belgium-smes.html",
+    "/nl/articles/belgische-btw-aangifte-odoo-handleiding.html": "/en/articles/belgian-vat-return-odoo.html",
+    "/nl/articles/boekhoudsoftware-kiezen-belgische-kmo.html": "/en/articles/choose-accounting-software-belgium.html",
+    // visszafelé párok
+    "/en/home.html": "/index.html",
+    "/en/odoo.html": "/nl/odoo.html",
+    "/en/sectors/building.html": "/nl/sectoren/bouw.html",
+    "/en/sectors/it.html": "/nl/sectoren/it.html",
+    "/en/sectors/consulting.html": "/nl/sectoren/consulting.html",
+    "/en/sectors/logistics.html": "/nl/sectoren/logistiek.html",
+    "/en/sectors/retail.html": "/nl/sectoren/retail.html",
+    "/en/sectors/marketing.html": "/nl/sectoren/marketing.html",
+    "/en/pricing.html": "/nl/pricing.html",
+    "/en/about-us.html": "/nl/about-us.html",
+    "/en/blog.html": "/nl/blog.html",
+    "/en/contact.html": "/nl/contact.html",
+    "/en/ghent.html": "/nl/gent.html",
+    "/en/antwerp.html": "/nl/antwerpen.html",
+    "/en/odoo-accountant-antwerp.html": "/nl/odoo-boekhouder-antwerpen.html",
+    "/en/odoo-accountant-belgium.html": "/nl/odoo-boekhouder-belgie.html",
+    "/en/odoo-accountant-flanders.html": "/nl/odoo-boekhouder-vlaanderen.html",
+    "/en/articles/cash-flow-forecast-odoo-cfo-dashboard.html": "/nl/articles/cash-flow-prognose-odoo-cfo-dashboard.html",
+    "/en/articles/freelancer-accounting-odoo-belgium.html": "/nl/articles/freelancer-boekhouding-odoo-belgie.html",
+    "/en/articles/peppol-vs-pdf-invoices-odoo-belgium.html": "/nl/articles/peppol-vs-pdf-facturen-belgie.html",
+    "/en/articles/best-odoo-apps-belgian-startups-2025.html": "/nl/articles/beste-odoo-apps-belgie-2025.html",
+    "/en/articles/odoo-18-accounting-new-features-belgium-smes.html": "/nl/articles/odoo-18-boekhouding-nieuwe-functies-belgie.html",
+    "/en/articles/belgian-vat-return-odoo.html": "/nl/articles/belgische-btw-aangifte-odoo-handleiding.html",
+    "/en/articles/choose-accounting-software-belgium.html": "/nl/articles/boekhoudsoftware-kiezen-belgische-kmo.html"
+  };
+  // Nyelvváltás logikája
+  function switchLang(toLang) {
+    const currentPath = window.location.pathname;
+    const newPath = langPairs[currentPath];
+    window.location.href = newPath || (toLang === 'en' ? "/en/home.html" : "/index.html");
+  }
+  // Gomb eseménykezelők (ID alapján)
+  document.addEventListener("DOMContentLoaded", function () {
+    const btnToEn = document.getElementById("switch-to-en-from-nl");
+    const btnToNl = document.getElementById("switch-to-nl-from-en");
+    if (btnToEn) btnToEn.addEventListener("click", function (e) {
+      e.preventDefault();
+      switchLang('en');
+    });
+    if (btnToNl) btnToNl.addEventListener("click", function (e) {
+      e.preventDefault();
+      switchLang('nl');
+    });
+  });
+</script>
+      </div>
+    </div>
+    <section class="rt-blog-details-hero-section blogpage">
+      <div class="w-layout-blockcontainer rt-container blogpage w-container">
+        <div class="w-layout-vflex rt-blog-details-hero-content-wrapper rt-align-xy-center rt-heading-wrapper-bottom-padding blogpage">
+          <div class="w-layout-hflex rt-sub-heading-wrap rt-sub-heading-bottom-padding rt-align-xy-center blogpage">
+            <div class="rt-sub-heading newest-articles-small-title header-title">latest articles</div>
+          </div>
+          <div class="rt-blog-details-frist-heading-wrap rt-chnage-padding blogpage">
+            <h1 class="rt-no-margin rt-text-align-center blogpage">Belgian VAT return in Odoo: step-by-step guide</h1>
+          </div>
+        </div>
+      </div>
+      <div class="w-layout-blockcontainer rt-big-container blogpage w-container">
+        <div class="rt-blog-details-main-image-wrapper blogpage"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.9949340820312px, 939.9899291992188px" srcset="../../images/pexels-ekaterina-bolovtsova-4048769-p-500.webp 500w, ../../images/pexels-ekaterina-bolovtsova-4048769-p-800.webp 800w, ../../images/pexels-ekaterina-bolovtsova-4048769-p-1080.webp 1080w, ../../images/pexels-ekaterina-bolovtsova-4048769-p-1600.webp 1600w, ../../images/pexels-ekaterina-bolovtsova-4048769-p-2000.webp 2000w, ../../images/pexels-ekaterina-bolovtsova-4048769-p-2600.webp 2600w, ../../images/pexels-ekaterina-bolovtsova-4048769-p-3200.webp 3200w, ../../images/pexels-ekaterina-bolovtsova-4048769.webp 6720w" alt="" src="../../images/pexels-ekaterina-bolovtsova-4048769.webp" loading="lazy" class="rt-auto-fit rt-image-full-width blogpage"></div>
+      </div>
+    </section>
+    <section class="rt-blog-details-section blogpage">
+      <div class="w-layout-blockcontainer rt-container w-container">
+        <div class="w-layout-vflex rt-blog-details-wrapper blogpage">
+          <div class="rt-blog-details-frist-heading-wrap rt-chnage-padding blogpage">
+            <div class="w-richtext">
+              <h2 class="heading-3 blogpage">Belgian VAT return in Odoo: step-by-step guide</h2>
+              <p class="paragraph blogpage">Submitting your Belgian VAT return doesn&#x27;t have to be complicated, especially when you&#x27;re using Odoo Accounting. Whether you&#x27;re a growing SME or an established enterprise, this guide will walk you through the entire process of preparing and filing your Belgian VAT declaration directly from Odoo. Say goodbye to manual spreadsheets and hello to automated compliance.</p>
+            </div>
+            <div class="rt-bottom-border rt-boredr-style-change blogpage"></div>
+            <div class="w-richtext">
+              <h2 class="heading-3 blogpage">Why is Belgian VAT compliance crucial?</h2>
+              <p class="paragraph blogpage">Belgium has one of the most complex VAT systems in Europe, with frequent updates to tax rates, exemptions, and reporting obligations. For Belgian companies, staying compliant is not just a legal obligation, it’s a financial necessity. Mistakes in VAT reporting can lead to fines, audits, and cash flow issues.</p>
+              <p class="paragraph blogpage">‍<br>Luckily, Odoo’s accounting module is fully equipped to handle the nuances of Belgian VAT rules, as long as it&#x27;s correctly configured.<br></p>
+            </div>
+            <div class="rt-bottom-border rt-boredr-style-change blogpage"></div>
+            <div class="w-richtext">
+              <h2 class="heading-3 blogpage">Setting up VAT in Odoo for Belgian rules</h2>
+              <p class="paragraph blogpage">Before you can submit your VAT return, you need to make sure your Odoo environment is properly set up for Belgian compliance.</p>
+            </div>
+            <div class="w-richtext">
+              <h3 class="heading-3 blogpage list_title">1. Configure VAT rates</h3>
+              <p class="paragraph-4 blogpage">Belgium uses multiple VAT rates:</p>
+              <ol role="list">
+                <li class="list-item blogpage">21% standard rate</li>
+                <li class="list-item-2 blogpage">12% reduced rate</li>
+                <li class="list-item-3 blogpage">6% super reduced rate</li>
+                <li class="list-item-3 blogpage">0% and exemptions</li>
+              </ol>
+            </div>
+            <div class="w-richtext">
+              <p class="paragraph-4 blogpage">In Odoo:</p>
+              <ol role="list">
+                <li class="list-item blogpage">Go to Accounting &gt; Configuration &gt; Taxes</li>
+                <li class="list-item-2 blogpage">Create or verify the relevant tax codes (e.g., BE21, BE12, etc.)</li>
+                <li class="list-item-3 blogpage">Make sure each tax is assigned to the correct Tax Group and Country</li>
+              </ol>
+            </div>
+            <div class="w-layout-hflex rt-blog-details-image-wrap article-rows">
+              <div class="rt-details-image-one rt-overflow-hidden article-rows"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.9949340820312px, 939.9899291992188px" srcset="../../images/Képernyőkép-2025-07-09-150707---Szerkesztve.png 500w, ../../images/Képernyőkép-2025-07-09-150707---Szerkesztve.png 800w, ../../images/Képernyőkép-2025-07-09-150707---Szerkesztve.png 1080w, ../../images/Képernyőkép-2025-07-09-150707---Szerkesztve.png 1252w" alt="Belgian VAT applied to product in Odoo (21%)" src="../../images/Képernyőkép-2025-07-09-150707---Szerkesztve.png" loading="lazy" class="rt-auto-fit rt-image-full-width"></div>
+            </div>
+            <div class="w-richtext">
+              <h3 class="heading-3 blogpage list_title">2. Link taxes to accounts and journals</h3>
+              <p class="paragraph-4 blogpage">Every tax must be linked to:</p>
+              <ol role="list">
+                <li class="list-item blogpage">A Sales Tax Account</li>
+                <li class="list-item-2 blogpage">A Purchase Tax Account</li>
+                <li class="list-item-3 blogpage">The correct Journals (e.g., Sales, Purchases)</li>
+              </ol>
+              <p class="paragraph-4 blogpage">This ensures that every transaction is reported correctly and reflected in your VAT statement.</p>
+            </div>
+            <div class="w-layout-hflex rt-blog-details-image-wrap article-rows">
+              <div class="rt-details-image-one rt-overflow-hidden article-rows"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.9949340820312px, 939.9899291992188px" srcset="../../images/Képernyőkép-2025-07-09-150831.png 500w, ../../images/Képernyőkép-2025-07-09-150831.png 800w, ../../images/Képernyőkép-2025-07-09-150831.png 1080w, ../../images/Képernyőkép-2025-07-09-150831.png 1168w" alt="Configure 21% Belgian VAT in Odoo tax settings with journal and account mapping" src="../../images/Képernyőkép-2025-07-09-150831.png" loading="lazy" class="rt-auto-fit rt-image-full-width"></div>
+            </div>
+            <div class="w-richtext">
+              <h2 class="heading blogpage"><strong>Generate and review your VAT report</strong></h2>
+              <p>Once your accounting is up to date and reconciled, follow these steps:</p>
+              <ol role="list">
+                <li class="list-item-4 blogpage">1. Go to Accounting &gt; Reporting &gt; Tax Report</li>
+                <li>2. Select the Belgian Localization format</li>
+                <li>3. Choose the correct Period (monthly or quarterly, based on your VAT regime)</li>
+                <li class="list-item-7 blogpage">4. Click Generate to see a preview</li>
+              </ol>
+              <p class="paragraph-9 blogpage">The report will display:</p>
+              <ol role="list">
+                <li>VAT collected on sales</li>
+                <li>VAT paid on purchases</li>
+                <li class="list-item-10 blogpage">Net amount due or to be refunded</li>
+              </ol>
+              <p class="paragraph-11 blogpage">Tip: Always double-check the totals, especially after major invoice corrections or journal imports.</p>
+            </div>
+            <h2>Submit your Belgian VAT return</h2>
+            <p>Belgian companies must submit their VAT returns electronically via Intervat or Peppol. Odoo allows you to:</p>
+            <div class="div-block-35">
+              <h3 class="heading-11">1. Export the XML file</h3>
+              <p>In the tax report view, click Export &gt; Belgian VAT XML</p>
+              <h3 class="heading-11">2. Upload to Intervat</h3>
+              <a href="https://eservices.minfin.fgov.be" class="link">Visit https://eservices.minfin.fgov.be<br></a>
+              <p>Log in with your eID or CSAM account<br></p>
+              <h3 class="heading-11">3. Validate and submit</h3>
+              <p>Follow the steps on the portal to upload and confirm your declaration</p>
+            </div>
+            <p>If you&#x27;re registered for monthly VAT prepayments or OSS (One Stop Shop), make sure to handle those separately.</p>
+            <div class="rt-bottom-border rt-boredr-style-change blogpage"></div>
+            <div class="w-richtext">
+              <h2 class="heading-10 blogpage"><strong>Commonissues and how to fix them</strong></h2>
+            </div>
+            <div class="w-layout-hflex rt-blog-details-blue-content-box rt-chnage blogpage blogpage-table">
+              <div class="rt-blue-content-paragraph-wrap blogpage blogpage-table">
+                <div data-w-id="aee0b4a3-cc35-bfaa-cd6b-8e13425a36a8" class="rt-features-item-wrap rt-border-bottom sectors blogpage-table _3_columns">
+                  <div class="rt-features-description-wrap sectors blogpage-table _3-columns">
+                    <div class="rt-feature-description-one sectors">
+                      <div class="text-block-6">Issue</div>
+                    </div>
+                    <div class="rt-feature-description-one sectors">
+                      <div class="text-block-7">Cause</div>
+                    </div>
+                    <div class="rt-feature-description-one sectors">
+                      <div class="text-block-7">Solution</div>
+                    </div>
+                  </div>
+                </div>
+                <div data-w-id="aee0b4a3-cc35-bfaa-cd6b-8e13425a36b0" class="rt-features-item-wrap rt-border-bottom sectors blogpage-table">
+                  <div class="rt-features-description-wrap sectors blogpage-table _3-columns">
+                    <div class="rt-feature-description-one sectors">
+                      <div>Missing tax lines</div>
+                    </div>
+                    <div class="rt-feature-description-one sectors">
+                      <div>Incorrect tax mapping</div>
+                    </div>
+                    <div class="rt-feature-description-one sectors">
+                      <div>Review product &amp; journal settings</div>
+                    </div>
+                  </div>
+                </div>
+                <div data-w-id="aee0b4a3-cc35-bfaa-cd6b-8e13425a36b9" class="rt-features-item-wrap rt-border-bottom sectors blogpage-table">
+                  <div class="rt-features-description-wrap sectors blogpage-table _3-columns">
+                    <div class="rt-feature-description-one sectors">
+                      <div>XML export error</div>
+                    </div>
+                    <div class="rt-feature-description-one sectors">
+                      <div>Missing VAT ID or address</div>
+                    </div>
+                    <div class="rt-feature-description-one sectors">
+                      <div>Fill in company info under Settings</div>
+                    </div>
+                  </div>
+                </div>
+                <div data-w-id="aee0b4a3-cc35-bfaa-cd6b-8e13425a36c2" class="rt-features-item-wrap rt-border-bottom sectors blogpage-table">
+                  <div class="rt-features-description-wrap sectors blogpage-table _3-columns">
+                    <div class="rt-feature-description-one sectors">
+                      <div>Report mismatch</div>
+                    </div>
+                    <div class="rt-feature-description-one sectors">
+                      <div>Incomplete reconciliation</div>
+                    </div>
+                    <div class="rt-feature-description-one sectors">
+                      <div>Finish reconciling bank journals</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-richtext">
+              <p class="paragraph-19 blogpage">Don&#x27;t panic, most problems are caused by missing configurations and are easily fixed once identified.</p>
+            </div>
+          </div>
+          <div class="rt-bottom-border rt-boredr-style-change blogpage"></div>
+          <div class="w-richtext">
+            <h2 class="heading blogpage"><strong>Automate VAT tasks with Bodoo</strong></h2>
+            <p>Tired of handling VAT manually every quarter?<br>At Bodoo, we help Belgian companies automate VAT flows, detect inconsistencies early, and ensure clean submissions, on time, every time.<br><br>We also help with:<br></p>
+            <ol role="list">
+              <li class="list-item-4 blogpage">Odoo VAT setup and localization</li>
+              <li>Audit-proof tax mapping</li>
+              <li>Peppol and Intervat integrations</li>
+              <li class="list-item-7 blogpage">Digital invoicing compliance</li>
+            </ol>
+            <p class="paragraph-9 blogpage">Want to avoid penalties and save time? Let’s make your VAT 100% automated.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-w-id="f795cdc0-0bde-4590-969a-aa0e84d0efad" class="rt-why-chosse-us-section sectors blogpage">
+      <div class="w-layout-blockcontainer rt-container sectors w-container">
+        <div class="w-layout-hflex rt-why-choose-us-container-wrapper sectors blogpage">
+          <div class="rt-why-choose-us-left sectors">
+            <div data-w-id="f795cdc0-0bde-4590-969a-aa0e84d0efb1" class="w-layout-hflex rt-sub-heading-wrap rt-sub-heading-bottom-padding sectors">
+              <div class="rt-sub-heading">why choose us</div>
+            </div>
+            <div class="rt-why-choose-us-heading-wrap rt-heading-bottom-padding rt-overflow-hidden sectors blogpage">
+              <h2 data-w-id="f795cdc0-0bde-4590-969a-aa0e84d0efb5" class="rt-no-margin blogpage"><strong>Ready tosimplify your </strong><span class="rt-section-heading-linear rt-diraction-change"><strong>VAT process?</strong></span><strong> </strong></h2>
+            </div>
+            <div class="rt-choose-us-description-text-wrap rt-overflow-hidden sectors blogpage">
+              <div data-w-id="f795cdc0-0bde-4590-969a-aa0e84d0efba" class="blogpage-contact-text">Submitting your Belgian VAT return in Odoo is simple once you’ve got the right setup. With correct tax configuration, periodic reconciliation, and automated reporting, Odoo becomes your best ally in VAT compliance.</div>
+            </div>
+            <div>
+              <a data-wf--button--variant="base" data-w-id="55151cd7-a110-3bf2-8ca1-5661f6187ed6" href="../../en/contact.html" class="rt-theme-button-navbar rt-change-bg rt-border-none w-inline-block">
+                <div class="rt-position-relative rt-button-text-wrap rt-change-white">
+                  <div class="rt-button-text">Book An Appointment</div>
+                  <div class="rt-button-text rt-button-text-two">Book An Appointment</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="rt-why-choose-right-side rt-position-relative sectors blogpage">
+            <div data-w-id="f795cdc0-0bde-4590-969a-aa0e84d0efd9" class="div-block-33 blogpage"><img width="550" sizes="(max-width: 767px) 100vw, 549.9899291992188px" alt="" src="../../images/pexels-karolina-grabowska-4476378.jpg" loading="lazy" srcset="../../images/pexels-karolina-grabowska-4476378-p-500.jpg 500w, ../../images/pexels-karolina-grabowska-4476378-p-800.jpg 800w, ../../images/pexels-karolina-grabowska-4476378-p-1080.jpg 1080w, ../../images/pexels-karolina-grabowska-4476378-p-1600.jpg 1600w, ../../images/pexels-karolina-grabowska-4476378-p-2000.jpg 2000w, ../../images/pexels-karolina-grabowska-4476378-p-2600.jpg 2600w, ../../images/pexels-karolina-grabowska-4476378-p-3200.jpg 3200w, ../../images/pexels-karolina-grabowska-4476378.jpg 3648w" class="rt-auto-fit rt-tab-image-full sectors blogpage"></div>
+            <div data-w-id="f795cdc0-0bde-4590-969a-aa0e84d0efdb" class="rt-position-absolute rt-position-text-card-wrap sectors blogpage">
+              <div class="rt-position-card-box rt-tab-none">
+                <div class="rt-text-padding"></div>
+                <div><img src="../../images/logo4.png" loading="lazy" width="150" sizes="149.99998474121094px" alt="" srcset="../../images/logo4-p-500.png 500w, ../../images/logo4-p-800.png 800w, ../../images/logo4.png 955w"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="blogpage-bottom-div-box">
+      <section class="rt-home-one-blog-section blogpage">
+        <div class="rt-home-one-blog-section-inner blogpage">
+          <div class="w-layout-blockcontainer rt-container blogpage w-container">
+            <div class="w-layout-hflex rt-our-offering-heading-wrapper rt-change-width rt-change-align blogpage">
+              <div data-w-id="3086a38c-b3d0-f71b-e827-e0c80c9a2eda" class="rt-blog-section-heading-wrap blogpage">
+                <h2 data-w-id="eeee3e46-74e0-9ef8-72b1-3eb56e6e9166" class="rt-no-margin rt-text-color-white odoo-faq"><span class="text-span">Our latest insights on the </span><span class="rt-section-heading-linear-3 rt-diraction-change">blog</span></h2>
+              </div>
+            </div>
+            <section class="rt-features-item-wraper blogpage">
+              <a data-w-id="3086a38c-b3d0-f71b-e827-e0c80c9a2ee0" href="../../en/articles/freelancer-accounting-odoo-belgium.html" class="rt-blog-item blogpage w-inline-block">
+                <div class="rt-blog-image-bottom-padding blogpage">
+                  <div class="rt-blog-image rt-overflow-hidden blogpage"><img width="410" height="398" alt="" src="../../images/pexels-mikhail-nilov-7680193.jpg" loading="lazy" srcset="../../images/pexels-mikhail-nilov-7680193-p-500.jpg 500w, ../../images/pexels-mikhail-nilov-7680193-p-800.jpg 800w, ../../images/pexels-mikhail-nilov-7680193-p-1080.jpg 1080w, ../../images/pexels-mikhail-nilov-7680193-p-1600.jpg 1600w, ../../images/pexels-mikhail-nilov-7680193-p-2000.jpg 2000w, ../../images/pexels-mikhail-nilov-7680193-p-2600.jpg 2600w, ../../images/pexels-mikhail-nilov-7680193-p-3200.jpg 3200w, ../../images/pexels-mikhail-nilov-7680193.jpg 7952w" sizes="(max-width: 479px) 100vw, 409.9949645996094px" class="rt-auto-fit rt-tab-image-full blogpage"></div>
+                </div>
+                <div class="blog-item-heading-text-wrap blogpage">
+                  <div class="rt-text-style-h6 blogpage article-1-card-1">Freelancer accounting in Odoo: a Belgian starter guide</div>
+                </div>
+                <div class="rt-blog-item-border-gap blogpage">
+                  <div class="rt-border-bottom rt-position-relative rt-border-one blogpage">
+                    <div class="rt-blog-item-border-hover rt-position-absolute blogpage"></div>
+                  </div>
+                </div>
+                <div class="w-layout-hflex rt-author-image-block blogpage">
+                  <div>
+                    <div class="rt-text-dark rt-change-text blogpage">Everything freelancers in Belgium need to know about bookkeeping with Odoo.<br></div>
+                  </div>
+                </div>
+              </a>
+              <a data-w-id="0d79fa40-b075-5db1-74fc-d2b83b737ff4" href="../../en/articles/peppol-vs-pdf-invoices-odoo-belgium.html" class="rt-blog-item blogpage w-inline-block">
+                <div class="rt-blog-image-bottom-padding blogpage">
+                  <div class="rt-blog-image rt-overflow-hidden blogpage"><img width="410" height="398" alt="" src="../../images/pexels-andrew-2312369.jpg" loading="lazy" srcset="../../images/pexels-andrew-2312369-p-500.jpg 500w, ../../images/pexels-andrew-2312369-p-800.jpg 800w, ../../images/pexels-andrew-2312369-p-1080.jpg 1080w, ../../images/pexels-andrew-2312369-p-1600.jpg 1600w, ../../images/pexels-andrew-2312369-p-2000.jpg 2000w, ../../images/pexels-andrew-2312369-p-2600.jpg 2600w, ../../images/pexels-andrew-2312369-p-3200.jpg 3200w, ../../images/pexels-andrew-2312369.jpg 6000w" sizes="(max-width: 479px) 100vw, 409.9949645996094px" class="rt-auto-fit rt-tab-image-full blogpage"></div>
+                </div>
+                <div class="blog-item-heading-text-wrap blogpage">
+                  <div class="rt-text-style-h6 blogpage article-1-card-2">Peppol versus PDF invoices: why clients prefer e‑invoicing (and how to do it in Odoo)<br><br></div>
+                </div>
+                <div class="rt-blog-item-border-gap blogpage">
+                  <div class="rt-border-bottom rt-position-relative rt-border-one blogpage">
+                    <div class="rt-blog-item-border-hover rt-position-absolute blogpage"></div>
+                  </div>
+                </div>
+                <div class="w-layout-hflex rt-author-image-block blogpage">
+                  <div>
+                    <div class="rt-text-dark rt-change-text blogpage">Discover how to switch to secure and efficient e‑invoicing via Peppol in Belgium with Odoo.<br></div>
+                  </div>
+                </div>
+              </a>
+              <a data-w-id="e7e5395f-4248-90c0-a57b-dcb95662f24e" href="../../en/articles/odoo-18-accounting-new-features-belgium-smes.html" class="rt-blog-item blogpage w-inline-block">
+                <div class="rt-blog-image-bottom-padding blogpage">
+                  <div class="rt-blog-image rt-overflow-hidden blogpage"><img width="410" height="398" alt="" src="../../images/pexels-fauxels-3183190.jpg" loading="lazy" srcset="../../images/pexels-fauxels-3183190-p-500.jpg 500w, ../../images/pexels-fauxels-3183190-p-800.jpg 800w, ../../images/pexels-fauxels-3183190-p-1080.jpg 1080w, ../../images/pexels-fauxels-3183190-p-1600.jpg 1600w, ../../images/pexels-fauxels-3183190-p-2000.jpg 2000w, ../../images/pexels-fauxels-3183190-p-2600.jpg 2600w, ../../images/pexels-fauxels-3183190-p-3200.jpg 3200w, ../../images/pexels-fauxels-3183190.jpg 6000w" sizes="(max-width: 479px) 100vw, 409.9949645996094px" class="rt-auto-fit rt-tab-image-full blogpage"></div>
+                </div>
+                <div class="blog-item-heading-text-wrap blogpage">
+                  <div class="rt-text-style-h6 blogpage article-1-card-3">Odoo 18 accounting: 9 new features Belgian SMEs can’t afford to ignore<br><br></div>
+                </div>
+                <div class="rt-blog-item-border-gap blogpage">
+                  <div class="rt-border-bottom rt-position-relative rt-border-one blogpage">
+                    <div class="rt-blog-item-border-hover rt-position-absolute blogpage"></div>
+                  </div>
+                </div>
+                <div class="w-layout-hflex rt-author-image-block blogpage">
+                  <div>
+                    <div class="rt-text-dark rt-change-text blogpage">See how the latest Odoo updates simplify VAT filing, invoicing and compliance in Belgium.<br></div>
+                  </div>
+                </div>
+              </a>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="rt-footer-v1 rt-overflow-hidden">
+        <div class="w-layout-hflex rt-footer-cta rt-tab-display-none">
+          <div class="w-layout-hflex rt-footer-cta-train">
+            <div>Crafting Strong Foundations</div>
+            <div class="rt-footer-marque-text rt-rwhite-text">Crafting Strong Foundations</div>
+            <div class="rt-footer-marque-text rt-rwhite-text">Crafting Strong Foundations</div>
+          </div>
+          <div class="w-layout-hflex rt-footer-cta-train">
+            <div class="rt-footer-marque-text rt-rwhite-text">Crafting Strong Foundations</div>
+            <div class="rt-footer-marque-text rt-rwhite-text">Crafting Strong Foundations</div>
+            <div class="rt-footer-marque-text rt-rwhite-text">Crafting Strong Foundations</div>
+          </div>
+          <div class="w-layout-hflex rt-footer-cta-train">
+            <div class="rt-footer-marque-text rt-rwhite-text">Crafting Strong Foundations</div>
+            <div class="rt-footer-marque-text rt-rwhite-text">Crafting Strong Foundations</div>
+            <div class="rt-footer-marque-text rt-rwhite-text">Crafting Strong Foundations</div>
+          </div>
+        </div>
+        <div class="w-layout-blockcontainer rt-container w-container">
+          <div class="w-layout-hflex rt-footer-top-div rt-position-relative">
+            <a href="#" class="rt-footer-one-logo-wrap w-inline-block"><img sizes="(max-width: 479px) 100vw, 256.5599670410156px" height="90" alt="" src="../../images/logo4.webp" loading="lazy" srcset="../../images/logo4-p-500.webp 500w, ../../images/logo4-p-800.webp 800w, ../../images/logo4.webp 955w" class="rt-auto-fit"></a>
+            <div class="w-layout-hflex rt-footer-one-socal-media-link">
+              <div class="footer-one-cta-content-wrap footer-button">
+                <a data-wf--button--variant="base" data-w-id="55151cd7-a110-3bf2-8ca1-5661f6187ed6" href="../../en/contact.html" class="rt-theme-button-navbar rt-change-bg rt-border-none w-inline-block">
+                  <div class="rt-position-relative rt-button-text-wrap rt-change-white">
+                    <div class="rt-button-text">Book An Appointment</div>
+                    <div class="rt-button-text rt-button-text-two">Book An Appointment</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-divider-v1 full-width position-relative"></div>
+          <div class="w-layout-hflex rt-footer-one-wrapper rt-position-relative">
+            <div class="footer-one-cta-wrap">
+              <div class="rt-footer-button-bottom-padding"></div>
+              <div class="w-layout-vflex footer-one-cta-button-wrap">
+                <a href="tel:8884567890" class="button-style-one overflow-hidden position-relative dark-background-button-6 w-inline-block">
+                  <div class="button-text-wrap overflow-hidden dark-background-button-7">
+                    <div class="button-font dark-background-button-8">call Now</div>
+                    <div class="button-font dark-background-button-8 white-text dark-background-button-9">call Now</div>
+                  </div>
+                  <div class="button-overlay-3 dark-background-button-10"></div>
+                </a>
+                <div class="text-block-5"><strong>Bodoo offers smart financial solutions for entrepreneurs.</strong><br>We specialise in accounting, Odoo automation, and real-time reporting.</div>
+              </div>
+            </div>
+            <div class="w-layout-grid footer-one-content-wrap">
+              <div class="w-layout-vflex footer-coloum-two position-relative">
+                <div class="footer-one-link-list-coloum-wrap">
+                  <div class="rt-text-style-h5">Quick links</div>
+                  <div class="footer-one-link-list-wrap">
+                    <a href="../../en/home.html" class="rt-hover">Home</a>
+                    <a href="../../en/odoo.html" class="rt-hover">Odoo Solutions</a>
+                    <a href="../../en/about-us.html" class="rt-hover">About Bodoo</a>
+                    <a href="../../en/blog.html" class="rt-hover">Blog</a>
+                    <a href="../../en/contact.html" class="rt-hover">Contact</a>
+                    <a href="https://creative.finance/" target="_blank" class="rt-hover">Accounting for Creatives<br></a>
+                  </div>
+                </div>
+                <div class="footer-divider-v2"></div>
+              </div>
+              <div class="w-layout-vflex footer-coloum-two position-relative rt-2">
+                <div class="footer-one-link-list-coloum-wrap">
+                  <a href="../../en/contact.html" class="rt-text-style-h5">Contact us<br></a>
+                  <div class="footer-one-link-list-wrap">
+                    <a href="../../en/ghent.html" class="rt-text-style-h6">The Hive<br></a>
+                    <div href="#" class="rt-color-para-two rt-text-dark">Dendermondsesteenweg 39,<br>9000 Ghent</div>
+                    <a href="../../en/antwerp.html" class="rt-text-style-h6">Humgy<br></a>
+                    <div href="#" class="rt-color-para-two rt-text-dark">Desguinlei 100,<br>2018 Antwerp</div>
+                    <a href="mailto:support@bodoo.be" class="rt-text-dark rt-text-align-center">support@bodoo.be</a>
+                  </div>
+                </div>
+                <div class="footer-divider-v2"></div>
+              </div>
+              <div class="w-layout-vflex footer-coloum-two responsive-gap rt-change rt-3">
+                <div class="footer-one-link-list-coloum-wrap">
+                  <div class="rt-text-style-h5">Social media</div>
+                  <div class="footer-one-link-list-wrap">
+                    <a target="_blank" href="https://www.instagram.com/creativefinance_be/" class="rt-hover">Instagram</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/benjamin-daemen-b4602031/?originalSubdomain=be" class="rt-hover">Linkedin</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-layout-blockcontainer rt-container w-container">
+          <div class="footer-divider-v4 position-relative"></div>
+          <div class="w-layout-hflex copyright-style-one">
+            <div class="rt-text-dark rt-text-align-center">
+              <a href="https://creative.finance/algemene-voorwaarden/">Terms and Conditions — Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=684ff366cfb5a7da83f6ea85" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../../js/webflow.js" type="text/javascript"></script>
+</body>
+</html>

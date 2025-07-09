@@ -402,5 +402,41 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/odoo-accountant-flanders.html"/>
   </url>
 
+<url>
+  <loc>https://www.bodoo.be/nl/articles/belgische-btw-aangifte-odoo-handleiding.html</loc>
+  <lastmod>2025-07-09</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/articles/belgische-btw-aangifte-odoo-handleiding.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/belgian-vat-return-odoo.html"/>
+</url>
+
+<url>
+  <loc>https://www.bodoo.be/nl/articles/boekhoudsoftware-kiezen-belgische-kmo.html</loc>
+  <lastmod>2025-07-09</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/articles/boekhoudsoftware-kiezen-belgische-kmo.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/choose-accounting-software-belgium.html"/>
+</url>
+
+<url>
+  <loc>https://www.bodoo.be/en/articles/belgian-vat-return-odoo.html</loc>
+  <lastmod>2025-07-09</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/articles/belgische-btw-aangifte-odoo-handleiding.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/belgian-vat-return-odoo.html"/>
+</url>
+
+<url>
+  <loc>https://www.bodoo.be/en/articles/choose-accounting-software-belgium.html</loc>
+  <lastmod>2025-07-09</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/articles/boekhoudsoftware-kiezen-belgische-kmo.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/choose-accounting-software-belgium.html"/>
+</url>
+
 
 </urlset>
