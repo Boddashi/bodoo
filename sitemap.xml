@@ -438,5 +438,59 @@
   <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/choose-accounting-software-belgium.html"/>
 </url>
 
+<url>
+  <loc>https://www.bodoo.be/en/articles/odoo-expense-tracking.html</loc>
+  <lastmod>2025-07-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/articles/odoo-expense-tracking.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/odoo-expense-tracking.html"/>
+</url>
+
+<url>
+  <loc>https://www.bodoo.be/nl/articles/odoo-expense-tracking.html</loc>
+  <lastmod>2025-07-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/articles/odoo-expense-tracking.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/odoo-expense-tracking.html"/>
+</url>
+
+<url>
+  <loc>https://www.bodoo.be/en/articles/odoo-budgeting-belgium.html</loc>
+  <lastmod>2025-07-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/articles/odoo-budgeting-belgium.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/odoo-budgeting-belgium.html"/>
+</url>
+
+<url>
+  <loc>https://www.bodoo.be/nl/articles/odoo-budgeting-belgium.html</loc>
+  <lastmod>2025-07-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/articles/odoo-budgeting-belgium.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/odoo-budgeting-belgium.html"/>
+</url>
+
+<url>
+  <loc>https://www.bodoo.be/en/articles/odoo-vs-winbooks.html</loc>
+  <lastmod>2025-07-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/articles/odoo-vs-winbooks.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/odoo-vs-winbooks.html"/>
+</url>
+
+<url>
+  <loc>https://www.bodoo.be/nl/articles/odoo-vs-winbooks.html</loc>
+  <lastmod>2025-07-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="nl" href="https://www.bodoo.be/nl/articles/odoo-vs-winbooks.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.bodoo.be/en/articles/odoo-vs-winbooks.html"/>
+</url>
+
 
 </urlset>

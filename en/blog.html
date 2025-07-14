@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Jul 09 2025 19:37:41 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Jul 14 2025 22:44:59 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="68650dbcb49995b4a1ce5957" data-wf-site="684ff366cfb5a7da83f6ea85" lang="en">
 <head>
   <meta charset="utf-8">
@@ -177,57 +177,65 @@ fbq('track', 'PageView');
     <div class="w-embed w-script">
       <script>
   // Oldalpárosítás angol és holland URL-ek között
-  const langPairs = {
-    "/index.html": "/en/home.html",
-    "/nl/odoo.html": "/en/odoo.html",
-    "/nl/sectoren/bouw.html": "/en/sectors/building.html",
-    "/nl/sectoren/it.html": "/en/sectors/it.html",
-    "/nl/sectoren/consulting.html": "/en/sectors/consulting.html",
-    "/nl/sectoren/logistiek.html": "/en/sectors/logistics.html",
-    "/nl/sectoren/retail.html": "/en/sectors/retail.html",
-    "/nl/sectoren/marketing.html": "/en/sectors/marketing.html",
-    "/nl/pricing.html": "/en/pricing.html",
-    "/nl/about-us.html": "/en/about-us.html",
-    "/nl/blog.html": "/en/blog.html",
-    "/nl/contact.html": "/en/contact.html",
-    "/nl/gent.html": "/en/ghent.html",
-    "/nl/antwerpen.html": "/en/antwerp.html",
-    "/nl/odoo-boekhouder-antwerpen.html": "/en/odoo-accountant-antwerp.html",
-    "/nl/odoo-boekhouder-belgie.html": "/en/odoo-accountant-belgium.html",
-    "/nl/odoo-boekhouder-vlaanderen.html": "/en/odoo-accountant-flanders.html",
-    "/nl/articles/cash-flow-prognose-odoo-cfo-dashboard.html": "/en/articles/cash-flow-forecast-odoo-cfo-dashboard.html",
-    "/nl/articles/freelancer-boekhouding-odoo-belgie.html": "/en/articles/freelancer-accounting-odoo-belgium.html",
-    "/nl/articles/peppol-vs-pdf-facturen-belgie.html": "/en/articles/peppol-vs-pdf-invoices-odoo-belgium.html",
-    "/nl/articles/beste-odoo-apps-belgie-2025.html": "/en/articles/best-odoo-apps-belgian-startups-2025.html",
-    "/nl/articles/odoo-18-boekhouding-nieuwe-functies-belgie.html": "/en/articles/odoo-18-accounting-new-features-belgium-smes.html",
-    "/nl/articles/belgische-btw-aangifte-odoo-handleiding.html": "/en/articles/belgian-vat-return-odoo.html",
-    "/nl/articles/boekhoudsoftware-kiezen-belgische-kmo.html": "/en/articles/choose-accounting-software-belgium.html",
-    // visszafelé párok
-    "/en/home.html": "/index.html",
-    "/en/odoo.html": "/nl/odoo.html",
-    "/en/sectors/building.html": "/nl/sectoren/bouw.html",
-    "/en/sectors/it.html": "/nl/sectoren/it.html",
-    "/en/sectors/consulting.html": "/nl/sectoren/consulting.html",
-    "/en/sectors/logistics.html": "/nl/sectoren/logistiek.html",
-    "/en/sectors/retail.html": "/nl/sectoren/retail.html",
-    "/en/sectors/marketing.html": "/nl/sectoren/marketing.html",
-    "/en/pricing.html": "/nl/pricing.html",
-    "/en/about-us.html": "/nl/about-us.html",
-    "/en/blog.html": "/nl/blog.html",
-    "/en/contact.html": "/nl/contact.html",
-    "/en/ghent.html": "/nl/gent.html",
-    "/en/antwerp.html": "/nl/antwerpen.html",
-    "/en/odoo-accountant-antwerp.html": "/nl/odoo-boekhouder-antwerpen.html",
-    "/en/odoo-accountant-belgium.html": "/nl/odoo-boekhouder-belgie.html",
-    "/en/odoo-accountant-flanders.html": "/nl/odoo-boekhouder-vlaanderen.html",
-    "/en/articles/cash-flow-forecast-odoo-cfo-dashboard.html": "/nl/articles/cash-flow-prognose-odoo-cfo-dashboard.html",
-    "/en/articles/freelancer-accounting-odoo-belgium.html": "/nl/articles/freelancer-boekhouding-odoo-belgie.html",
-    "/en/articles/peppol-vs-pdf-invoices-odoo-belgium.html": "/nl/articles/peppol-vs-pdf-facturen-belgie.html",
-    "/en/articles/best-odoo-apps-belgian-startups-2025.html": "/nl/articles/beste-odoo-apps-belgie-2025.html",
-    "/en/articles/odoo-18-accounting-new-features-belgium-smes.html": "/nl/articles/odoo-18-boekhouding-nieuwe-functies-belgie.html",
-    "/en/articles/belgian-vat-return-odoo.html": "/nl/articles/belgische-btw-aangifte-odoo-handleiding.html",
-    "/en/articles/choose-accounting-software-belgium.html": "/nl/articles/boekhoudsoftware-kiezen-belgische-kmo.html"
-  };
+ const langPairs = {
+  "/index.html": "/en/home.html",
+  "/nl/odoo.html": "/en/odoo.html",
+  "/nl/sectoren/bouw.html": "/en/sectors/building.html",
+  "/nl/sectoren/it.html": "/en/sectors/it.html",
+  "/nl/sectoren/consulting.html": "/en/sectors/consulting.html",
+  "/nl/sectoren/logistiek.html": "/en/sectors/logistics.html",
+  "/nl/sectoren/retail.html": "/en/sectors/retail.html",
+  "/nl/sectoren/marketing.html": "/en/sectors/marketing.html",
+  "/nl/pricing.html": "/en/pricing.html",
+  "/nl/about-us.html": "/en/about-us.html",
+  "/nl/blog.html": "/en/blog.html",
+  "/nl/contact.html": "/en/contact.html",
+  "/nl/gent.html": "/en/ghent.html",
+  "/nl/antwerpen.html": "/en/antwerp.html",
+  "/nl/odoo-boekhouder-antwerpen.html": "/en/odoo-accountant-antwerp.html",
+  "/nl/odoo-boekhouder-belgie.html": "/en/odoo-accountant-belgium.html",
+  "/nl/odoo-boekhouder-vlaanderen.html": "/en/odoo-accountant-flanders.html",
+  "/nl/articles/cash-flow-prognose-odoo-cfo-dashboard.html": "/en/articles/cash-flow-forecast-odoo-cfo-dashboard.html",
+  "/nl/articles/freelancer-boekhouding-odoo-belgie.html": "/en/articles/freelancer-accounting-odoo-belgium.html",
+  "/nl/articles/peppol-vs-pdf-facturen-belgie.html": "/en/articles/peppol-vs-pdf-invoices-odoo-belgium.html",
+  "/nl/articles/beste-odoo-apps-belgie-2025.html": "/en/articles/best-odoo-apps-belgian-startups-2025.html",
+  "/nl/articles/odoo-18-boekhouding-nieuwe-functies-belgie.html": "/en/articles/odoo-18-accounting-new-features-belgium-smes.html",
+  "/nl/articles/belgische-btw-aangifte-odoo-handleiding.html": "/en/articles/belgian-vat-return-odoo.html",
+  "/nl/articles/boekhoudsoftware-kiezen-belgische-kmo.html": "/en/articles/choose-accounting-software-belgium.html",
+  // ÚJ LINKPÁROK
+  "/nl/articles/odoo-expense-tracking.html": "/en/articles/odoo-expense-tracking.html",
+  "/nl/articles/odoo-budgeting-belgium.html": "/en/articles/odoo-budgeting-belgium.html",
+  "/nl/articles/odoo-vs-winbooks.html": "/en/articles/odoo-vs-winbooks.html",
+  // visszafelé párok
+  "/en/home.html": "/index.html",
+  "/en/odoo.html": "/nl/odoo.html",
+  "/en/sectors/building.html": "/nl/sectoren/bouw.html",
+  "/en/sectors/it.html": "/nl/sectoren/it.html",
+  "/en/sectors/consulting.html": "/nl/sectoren/consulting.html",
+  "/en/sectors/logistics.html": "/nl/sectoren/logistiek.html",
+  "/en/sectors/retail.html": "/nl/sectoren/retail.html",
+  "/en/sectors/marketing.html": "/nl/sectoren/marketing.html",
+  "/en/pricing.html": "/nl/pricing.html",
+  "/en/about-us.html": "/nl/about-us.html",
+  "/en/blog.html": "/nl/blog.html",
+  "/en/contact.html": "/nl/contact.html",
+  "/en/ghent.html": "/nl/gent.html",
+  "/en/antwerp.html": "/nl/antwerpen.html",
+  "/en/odoo-accountant-antwerp.html": "/nl/odoo-boekhouder-antwerpen.html",
+  "/en/odoo-accountant-belgium.html": "/nl/odoo-boekhouder-belgie.html",
+  "/en/odoo-accountant-flanders.html": "/nl/odoo-boekhouder-vlaanderen.html",
+  "/en/articles/cash-flow-forecast-odoo-cfo-dashboard.html": "/nl/articles/cash-flow-prognose-odoo-cfo-dashboard.html",
+  "/en/articles/freelancer-accounting-odoo-belgium.html": "/nl/articles/freelancer-boekhouding-odoo-belgie.html",
+  "/en/articles/peppol-vs-pdf-invoices-odoo-belgium.html": "/nl/articles/peppol-vs-pdf-facturen-belgie.html",
+  "/en/articles/best-odoo-apps-belgian-startups-2025.html": "/nl/articles/beste-odoo-apps-belgie-2025.html",
+  "/en/articles/odoo-18-accounting-new-features-belgium-smes.html": "/nl/articles/odoo-18-boekhouding-nieuwe-functies-belgie.html",
+  "/en/articles/belgian-vat-return-odoo.html": "/nl/articles/belgische-btw-aangifte-odoo-handleiding.html",
+  "/en/articles/choose-accounting-software-belgium.html": "/nl/articles/boekhoudsoftware-kiezen-belgische-kmo.html",
+  // ÚJ LINKPÁROK visszafelé
+  "/en/articles/odoo-expense-tracking.html": "/nl/articles/odoo-expense-tracking.html",
+  "/en/articles/odoo-budgeting-belgium.html": "/nl/articles/odoo-budgeting-belgium.html",
+  "/en/articles/odoo-vs-winbooks.html": "/nl/articles/odoo-vs-winbooks.html"
+};
   // Nyelvváltás logikája
   function switchLang(toLang) {
     const currentPath = window.location.pathname;
@@ -372,6 +380,31 @@ fbq('track', 'PageView');
                 </div>
               </div>
             </a>
+            <a href="../en/articles/odoo-budgeting-belgium.html" class="rt-blog-v1-item w-inline-block">
+              <div class="rt-blog-v1-item-image-wrap rt-radius-twenty rt-overflow-hidden rt-position-relative blog"><img width="615" height="463" alt="" src="../images/pexels-mikhail-nilov-8297031.jpg" loading="lazy" srcset="../images/pexels-mikhail-nilov-8297031-p-500.jpg 500w, ../images/pexels-mikhail-nilov-8297031-p-800.jpg 800w, ../images/pexels-mikhail-nilov-8297031-p-1080.jpg 1080w, ../images/pexels-mikhail-nilov-8297031-p-1600.jpg 1600w, ../images/pexels-mikhail-nilov-8297031-p-2000.jpg 2000w, ../images/pexels-mikhail-nilov-8297031-p-2600.jpg 2600w, ../images/pexels-mikhail-nilov-8297031-p-3200.jpg 3200w, ../images/pexels-mikhail-nilov-8297031.jpg 6000w" sizes="(max-width: 767px) 100vw, 614.9999389648438px" class="rt-auto-fit rt-tab-image-full">
+                <div class="w-layout-hflex rt-blog-image-hover-block rt-position-absolute rt-align-xy-center rt-tab-none">
+                  <div data-w-id="62ebec4b-e8a0-a49e-9f49-da9bcf780bdb" class="w-layout-hflex rt-hover-move-element rt-radius-fifty-percent rt-align-xy-center">
+                    <div>
+                      <div class="rt-color-white rt-capitalize blog">See more</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rt-blog-v1-item-conntent-area">
+                <div class="rt-tittle-text-wrap"></div>
+                <div class="rt-blog-v1-item-heading-wrap rt-wrap-two">
+                  <div class="rt-text-style-h5">Budgeting in Odoo: From planning to reporting</div>
+                </div>
+                <div class="rt-blog-content-border"></div>
+                <div class="w-layout-hflex rt-author-details-wrap-2">
+                  <div class="rt-author">
+                    <div>
+                      <div class="rt-text-style-h6">Control your finances with Odoo’s budgeting tools—plan, track, and report in real time for smarter business decisions.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="w-layout-vflex rt-blog-v1-item-wrapper-left-side">
             <a href="../en/articles/freelancer-accounting-odoo-belgium.html" class="rt-blog-v1-item w-inline-block">
@@ -443,6 +476,56 @@ fbq('track', 'PageView');
                   <div class="rt-author">
                     <div>
                       <div class="rt-text-style-h6">Simplify your Belgian VAT declaration in Odoo with this clear, step-by-step guide for SMEs.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="../en/articles/odoo-expense-tracking.html" class="rt-blog-v1-item w-inline-block">
+              <div class="rt-blog-v1-item-image-wrap rt-radius-twenty rt-overflow-hidden rt-position-relative blog"><img width="615" height="463" alt="" src="../images/pexels-olia-danilevich-5466814.jpg" loading="lazy" srcset="../images/pexels-olia-danilevich-5466814-p-500.jpg 500w, ../images/pexels-olia-danilevich-5466814-p-800.jpg 800w, ../images/pexels-olia-danilevich-5466814-p-1080.jpg 1080w, ../images/pexels-olia-danilevich-5466814-p-1600.jpg 1600w, ../images/pexels-olia-danilevich-5466814-p-2000.jpg 2000w, ../images/pexels-olia-danilevich-5466814-p-2600.jpg 2600w, ../images/pexels-olia-danilevich-5466814-p-3200.jpg 3200w, ../images/pexels-olia-danilevich-5466814.jpg 6000w" sizes="(max-width: 767px) 100vw, 614.9999389648438px" class="rt-auto-fit rt-tab-image-full">
+                <div class="w-layout-hflex rt-blog-image-hover-block rt-position-absolute rt-align-xy-center rt-tab-none">
+                  <div data-w-id="784a0879-d378-674f-4178-192c536bcc0b" class="w-layout-hflex rt-hover-move-element rt-radius-fifty-percent rt-align-xy-center">
+                    <div>
+                      <div class="rt-color-white rt-capitalize">See more</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rt-blog-v1-item-conntent-area">
+                <div class="rt-tittle-text-wrap"></div>
+                <div class="rt-blog-v1-item-heading-wrap rt-wrap-two">
+                  <div class="rt-text-style-h5">Digital expense tracking in Odoo: Save time and money</div>
+                </div>
+                <div class="rt-blog-content-border"></div>
+                <div class="w-layout-hflex rt-author-details-wrap-2">
+                  <div class="rt-author">
+                    <div>
+                      <div class="rt-text-style-h6">Simplify expense submissions, approvals, and accounting with Odoo’s fully digital expense management for Belgian SMEs.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="../en/articles/odoo-vs-winbooks.html" class="rt-blog-v1-item w-inline-block">
+              <div class="rt-blog-v1-item-image-wrap rt-radius-twenty rt-overflow-hidden rt-position-relative blog"><img width="615" height="550" alt="" src="../images/pexels-pixabay-53621.jpg" loading="lazy" srcset="../images/pexels-pixabay-53621.jpg 500w, ../images/pexels-pixabay-53621.jpg 800w, ../images/pexels-pixabay-53621.jpg 1080w, ../images/pexels-pixabay-53621.jpg 1600w, ../images/pexels-pixabay-53621.jpg 2000w, ../images/pexels-pixabay-53621.jpg 2600w, ../images/pexels-pixabay-53621.jpg 3200w, ../images/pexels-pixabay-53621.jpg 5259w" sizes="(max-width: 767px) 100vw, 614.9999389648438px" class="rt-auto-fit rt-tab-image-full">
+                <div class="w-layout-hflex rt-blog-image-hover-block rt-position-absolute rt-align-xy-center rt-tab-none">
+                  <div data-w-id="78bf150a-a02c-25b9-6047-5a2f9bf9e309" class="w-layout-hflex rt-hover-move-element rt-radius-fifty-percent rt-align-xy-center">
+                    <div>
+                      <div class="rt-color-white rt-capitalize">See more</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rt-blog-v1-item-conntent-area">
+                <div class="rt-tittle-text-wrap"></div>
+                <div class="rt-blog-v1-item-heading-wrap rt-wrap-two">
+                  <div class="rt-text-style-h5">Odoo vs WinBooks: the real cost of switching your accounting platform</div>
+                </div>
+                <div class="rt-blog-content-border"></div>
+                <div class="w-layout-hflex rt-author-details-wrap-2">
+                  <div class="rt-author">
+                    <div>
+                      <div class="rt-text-style-h6">Is your current accounting software holding you back? Compare Odoo and WinBooks to see the real cost of not switching.<br></div>
                     </div>
                   </div>
                 </div>
